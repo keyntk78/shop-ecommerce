@@ -2,11 +2,13 @@
   "name": "shop-ecommerce",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "debug": "node inspect server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,7 @@
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.0",
-    "mongose": "^0.0.2-security"
+    "mongoose": "^7.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
