@@ -8,6 +8,8 @@ router.post('/', [verifyAccessToken, isAdmin], ProductController.createProduct)
 
 router.get('/', ProductController.getProducts)
 
+router.put('/ratings', verifyAccessToken, ProductController.ratingProduct)
+
 router.put(
   '/:pid',
   [verifyAccessToken, isAdmin],
@@ -18,6 +20,7 @@ router.delete(
   [verifyAccessToken, isAdmin],
   ProductController.deleteProduct
 )
+
 router.get('/:pid', ProductController.getProduct)
 
 export default router

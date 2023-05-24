@@ -13,7 +13,7 @@ var productSchema = new Schema(
       unique: true,
       lowercase: true,
     },
-    descruption: {
+    description: {
       type: String,
       required: true,
     },
